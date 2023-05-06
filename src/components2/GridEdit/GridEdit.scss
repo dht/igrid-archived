@@ -1,0 +1,14 @@
+.Grid-container {
+    .library {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 290px;
+        height: 300px;
+        pointer-events: none;
+
+        > div {
+            pointer-events: all;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.InstanceHeader-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #aaa;
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 1px solid #223;
+    padding: 3px 6px;
+
+    .title {
+        flex: 1;
+    }
+
+    > .actions {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}

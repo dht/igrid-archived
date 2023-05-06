@@ -1,0 +1,47 @@
+.Instance-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transform: scale(0);
+  opacity: 0;
+  min-width: 50px;
+
+  > .content {
+    flex: 1;
+    display: flex;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &.overflow {
+      overflow-y: visible;
+      overflow-x: visible;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px #aaa;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 10px;
+    }
+  }
+
+  &.transparent {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    border-color: transparent;
+  }
+
+  &.visible {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

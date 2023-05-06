@@ -1,0 +1,24 @@
+.WidgetTag-container {
+  color: #777;
+  background-color: rgba(20, 20, 30, 0.9);
+  border: 1px solid darken(#777, 20%);
+  border-radius: 0 5px 5px 0;
+  font-weight: bold;
+  padding: 3px 12px 3px 8px;
+  position: absolute;
+  top: 350px;
+  left: -11px;
+
+  &:after {
+    content: ' ';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -11px;
+    left: -1px;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid rgba(10, 10, 10, 0.8);
+    border-left: 10px solid transparent;
+  }
+}
